@@ -52,3 +52,13 @@ func doesStringContains(string1: String, string2: String) -> Bool {
 }
 
 //print(doesStringContains(string1: "Hello", string2: "Helo"))
+
+//contain without contain()
+//func doesStringContains(string1: String, string2: String) -> Bool {
+//    let z = string2.range(of: string1)
+//    if z != nil{
+//        return true
+//    }
+//    return false
+//}
+//print(doesStringContains(string1: "He", string2: "Hello"))
