@@ -40,8 +40,8 @@ func maxVowels(_ s: String, _ k: Int) -> Int {
     var i = k
     let setVowles = Set(["a", "e", "i", "o", "u"])
     var maxcount: Int = 0
-    for j in 0..<k {
-        maxcount += setVowles.contains(String(ary[j])) ? 1 : 0
+    for j in ary[0..<k] {
+        maxcount += setVowles.contains(String(j)) ? 1 : 0
     }
     var lastcount = maxcount
     while i < ary.count {
